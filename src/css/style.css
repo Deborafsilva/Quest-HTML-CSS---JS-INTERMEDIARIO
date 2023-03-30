@@ -1,0 +1,117 @@
+
+html{
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.formulario{
+    background-image: url(../imagem/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    max-height: 402px;
+    display:flex;
+    padding: 12px 50px 12px 40px ;
+
+}
+
+.formulario .textos{
+    padding: 134px 52px 134px 10px;
+}
+
+.formulario .textos h1{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 900;
+    width: 288px;
+    padding-bottom: 11px;
+}
+
+.formulario .textos p{
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 400;
+    width: 300px;
+}
+
+.formulario .secao-formulario{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    width: 340px;
+    height: 378px;
+    padding: 20px;   
+}
+
+.formulario .secao-formulario .input{
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.formulario .secao-formulario .nome,.email,.telefone{
+    width: 298px;
+    height: 35px;
+}
+
+.formulario .secao-formulario .mensagem{
+    width: 298px;
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 7px;
+}
+
+.formulario .secao-formulario .nome::placeholder,.email::placeholder,.telefone::placeholder,.mensagem::placeholder{
+    font-weight: 700;
+    font-size: 15px;
+    color: #A8A8A8;  
+}
+
+.formulario .secao-formulario .aviso{
+    font-size: 9px;
+    font-weight: 400;
+    color: #F52E2E;
+    display: none;   
+}
+
+.formulario .secao-formulario label{
+    margin-bottom: 8px;
+}
+
+.formulario .secao-formulario .campo{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.formulario .secao-formulario .btn{
+    width: 298px;
+    height: 41px;
+    background: #3CCC87;
+    border-radius: 5px;
+    border: #3CCC87 solid;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+/*VALIDANDO FORMULÁRIO JS*/
+
+ .formulario .secao-formulario .input.validado{
+    border: 1px solid #00C22B;
+}
+
+ .formulario .secao-formulario .input.nao-validado{
+    border: 1px solid #F52E2E;
+}
+
+.formulario .secao-formulario .aviso.alerta{
+    display: block;
+}
+
